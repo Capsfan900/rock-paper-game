@@ -2,4 +2,4 @@
 
 An assignment for the ODIN PROJECT 
 
-note i am still a beginner so don't make fun of how bad my code is too much lol
+note I am still a beginner so feel free to make constructive pull requests 
