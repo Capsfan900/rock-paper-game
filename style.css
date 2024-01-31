@@ -1,0 +1,421 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/img/veryblueshape.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  position: fixed;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 70px;
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+}
+
+
+/*/ main page content /*/
+
+.gameContainer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.gameButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("/img/buttonblue2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15rem;
+  border-radius: 30%;
+  margin-top: 1rem;
+}
+
+
+
+#player,
+#computer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 15rem;
+  width: 20rem;
+  text-align: center;
+  margin: 1rem;
+  color: black;
+
+}
+
+
+#scoreanims {
+  background-image: url("/img/circledark.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  height: 30rem;
+  width: 70rem;
+  text-align: center;
+  margin: 1rem;
+  color: black;
+}
+
+#scoreboard {
+  background-image: url("/img/buttonblue2.png");
+  display: flex;
+  gap: 15rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: auto;
+  text-align: center;
+}
+
+
+#rock {
+  margin: 40px;
+  width: 8rem;
+  height: 120px;
+  border-radius: 30%;
+  background-image: url('img/rock-icon-blue.png');
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  color: transparent;
+}
+
+#paper {
+  margin: 40px;
+  width: 9rem;
+  height: 120px;
+  border-radius: 30%;
+  background-image: url('img/paper-icon-blue.png');
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+#scissors {
+  margin: 40px;
+  width: 9rem;
+  height: 120px;
+  border-radius: 30%;
+  background-image: url('img/scissors-icon-game.png');
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+
+#scoreanims {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#compchoicedisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/rock-icon.png");
+  height: 14rem;
+  width: 15.1rem;
+}
+
+
+
+
+
+
+
+
+
+/*/navbars/*/
+.navbar {
+  display: flex;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #174EA6, #174EA6);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.navbar a {
+  background-color: #174EA6;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.rightbar {
+  background-color: #174EA6;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navbar a.active {
+  background-color: #174EA6;
+  color: white;
+
+}
+
+.bottom-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #174EA6;
+  /* Adjust the background color as needed */
+  color: white;
+  /* Adjust the text color as needed */
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #174EA6;
+}
+
+
+
+/*/toggle anim states /*/
+.spin {
+  animation: rotate .5s ease;
+}
+
+.rotateSpin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/rock-icon.png");
+  height: 14rem;
+  width: 15.1rem;
+  animation: rotateSphere 150ms ease-in infinite;
+
+}
+
+#rockchoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/rock-icon.png");
+  height: 14rem;
+  width: 15.1rem;
+  animation: rotateSphere 2s ease-in;
+}
+
+#paperchoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/paper-icon.png");
+  height: 14rem;
+  width: 15.1rem;
+  animation: rotateSphere 2s ease-in;
+}
+
+
+#scissorschoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/scissors-icon.png");
+  height: 14rem;
+  width: 15.1rem;
+  animation: rotateSphere 2s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*/ hover states /*/
+
+.rock:hover {
+  background-image: url('/img/sideways.png');
+  color: #ecf0f1;
+  animation: rotate 0.23s ease-out;
+}
+
+
+.paper:hover {
+  background-image: url('/img/sideways2.png');
+  color: #ecf0f1;
+  animation: rotate 0.23s ease-out;
+}
+
+.scissors:hover {
+  background-image: url('/img/sideways3.png');
+  color: #ecf0f1;
+  animation: rotate 0.23s ease-out;
+
+}
+
+.navbar a:hover {
+  background-color: #4285f4;
+
+
+}
+
+.bottom-navbar a:hover {
+  background-color: #4285f4;
+}
+
+#rock:hover {
+  margin: 40px;
+  width: 8rem;
+  height: 120px;
+  border-radius: 30%;
+  background-image: url('img/rock-icon.png');
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  color: transparent;
+
+}
+
+#paper:hover {
+  margin: 40px;
+  width: 9rem;
+  height: 120px;
+  border-radius: 30%;
+  background-image: url('img/paper-icon.png');
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+#scissors:hover {
+  margin: 40px;
+  width: 9rem;
+  height: 120px;
+  border-radius: 30%;
+  background-image: url('img/scissors-icon.png');
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer
+}
+
+
+
+
+
+
+
+
+
+/*/ media queries and keyframes /*/
+@media screen and (max-width: 700px) {
+
+  .navbar a,
+  .bottom-navbar a {
+    float: none;
+    display: block;
+  }
+
+  .gameButtons {
+    background-image: none;
+    border-radius: 20%;
+    margin: 0;
+    size-adjust: 70%;
+  }
+}
+
+
+
+
+/* Define the keyframes for the animation */
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0%);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateSphere {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
