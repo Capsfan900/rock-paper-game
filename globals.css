@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:200");
 
 * {
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  margin: 0;
 }

@@ -1,9 +1,12 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("/img/veryblueshape.jpg");
+  background-image: url("/img/custompage.png");
+  height: 100%;
+  background-position: center;
   background-repeat: no-repeat;
-
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .header {
@@ -12,15 +15,22 @@ body {
   position: fixed;
 }
 
-.header h1 {
-  font-size: 50px;
-}
+
 
 h2 {
   font-size: 70px;
   font-style: oblique;
-  color: rgb(0, 0, 0);
+  color: rgb(69, 6, 229);
+
 }
+
+#playerlabel,
+#computerlabel {
+  font-size: 30px;
+  font-style: oblique;
+  color: rgb(13, 28, 245);
+}
+
 
 
 /*/ main page content /*/
@@ -52,6 +62,7 @@ h2 {
 #player,
 #computer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -64,7 +75,7 @@ h2 {
   text-align: center;
   margin: 1rem;
   color: black;
-
+  gap: 1rem;
 }
 
 
@@ -88,14 +99,14 @@ h2 {
 #scoreboard {
   background-image: url("/img/buttonblue2.png");
   display: flex;
-  gap: 15rem;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20rem;
+  height: 15rem;
   width: auto;
   text-align: center;
 }
@@ -129,7 +140,7 @@ h2 {
 #scissors {
   margin: 40px;
   width: 9rem;
-  height: 120px;
+  height: 130px;
   border-radius: 30%;
   background-image: url('img/scissors-icon-game.png');
   background-size: contain;
@@ -148,14 +159,22 @@ h2 {
 
 }
 
-#compchoicedisplay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("/img/rock-icon.png");
-  height: 14rem;
-  width: 15.1rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -239,43 +258,46 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/rock-icon.png");
   height: 14rem;
   width: 15.1rem;
-  animation: rotateSphere 150ms ease-in infinite;
+  animation: rotateSphere 1s ease-in;
 
 }
 
-#rockchoice {
+.rock {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("/img/rock-icon.png");
+  background-size: contain;
   height: 14rem;
   width: 15.1rem;
-  animation: rotateSphere 2s ease-in;
+
 }
 
-#paperchoice {
+.paper {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("/img/paper-icon.png");
-  height: 14rem;
+  background-size: contain;
+  height: 13rem;
   width: 15.1rem;
-  animation: rotateSphere 2s ease-in;
+
 }
 
 
-#scissorschoice {
+.scissors {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("/img/scissors-icon.png");
-  height: 14rem;
+  background-size: contain;
+  height: 13rem;
   width: 15.1rem;
-  animation: rotateSphere 2s ease-in;
 }
+
+
 
 
 
@@ -418,4 +440,12 @@ h2 {
   100% {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
+}
+
+
+
+/*/ utility classes /*/
+
+.clear {
+  background-image: none;
 }

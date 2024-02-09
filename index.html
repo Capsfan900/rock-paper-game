@@ -8,30 +8,47 @@
   <script defer src="script.js"></script>
 </head>
 
-<!DOCTYPE html>
-<html>
-
 <body>
-
   <div class="navbar">
     <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Rock Paper Scissors</a>
     <a href="#"><i class="fa fa-fw fa-search"></i>GitHub</a>
     <a href="#"><i class="fa fa-fw fa-envelope"></i> LinkedIn</a>
-    <div class='right'></div><a href="#"><i class="rightnav"></i></a>
+    <div class='right'>
+      <a href="#"><i class="rightnav"></i></a>
+    </div>
   </div>
-  </div>
-
-
-
   <div class="gameContainer">
     <div id="scoreboard">
       <div id="player">
+        <div id='playerlabel'> Player</div>
         <h2 id="playerscore"></h2>
       </div>
+
+
+      <div id='winscreen'>
+        <div id='wincontent'></div>
+        <div id='wincontent1'></div>
+        <div id='wincontent2'></div>
+      </div>
+      <div id='losescreen'>
+        <div id='losecontent'></div>
+        <div id='losecontent1'></div>
+        <div id='losecontent2'></div>
+      </div>
+      <div id='tiescreen'>
+        <div id=tiecontent></div>
+        <div id=tiecontent1></div>
+        <div id=tiecontent2></div>
+      </div>
+
+
       <div id="computer">
-        <h2 id=computerscore></h2>
+        <div id="computerlabel">Computer</div>
+        <h2 id="computerscore"></h2>
       </div>
     </div>
+
+
     <div id="scoreanims">
       <div id='resultanim'></div>
     </div>
@@ -41,13 +58,11 @@
       <div id="paper"></div>
       <div id="scissors"></div>
     </div>
+  </div>
 
-    <div class="bottom-navbar">
-      <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Copyright @ Odin Project 2024</a>
-    </div>
-
-
+  <div class="bottom-navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Copyright @ Odin Project 2024</a>
+  </div>
 </body>
-
 
 </html>
