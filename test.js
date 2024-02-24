@@ -78,14 +78,10 @@ game('rock');
 // Display initial scores
 updateScoreDisplay();
 
-console.log(computerScore,userScore);
+console.log(computerScore,userScore);//for debug yo
 
 
 
-
-
-
-///code without dom for node debugging///
 
 
 
