@@ -48,7 +48,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url("/img/buttonblue2.png");
+  background-image: url("buttonblue2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
