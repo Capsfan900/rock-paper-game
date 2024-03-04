@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -48,7 +55,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url("buttonblue2.png");
+  background-image: url("./img/buttonblue2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -80,7 +87,7 @@ h2 {
 
 
 #scoreanims {
-  background-image: url("/img/circledark.png");
+  background-image: url("./img/circledark.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +104,7 @@ h2 {
 }
 
 #scoreboard {
-  background-image: url("/img/buttonblue2.png");
+  background-image: url("./img/buttonblue2.png");
   display: flex;
   gap: 5rem;
   justify-content: center;
@@ -117,7 +124,7 @@ h2 {
   width: 8rem;
   height: 120px;
   border-radius: 30%;
-  background-image: url('/img/rock-icon-blue.png');
+  background-image: url("./img/rock-icon-blue.png");
   background-size: contain;
   background-position: center;
   border: none;
@@ -130,7 +137,7 @@ h2 {
   width: 9rem;
   height: 120px;
   border-radius: 30%;
-  background-image: url('/img/paper-icon-blue.png');
+  background-image: url('./img/paper-icon-blue.png');
   background-size: contain;
   background-position: center;
   border: none;
@@ -142,7 +149,7 @@ h2 {
   width: 9rem;
   height: 130px;
   border-radius: 30%;
-  background-image: url('/img/scissors-icon-game.png');
+  background-image: url('./img/scissors-icon-game.png');
   background-size: contain;
   background-position: center;
   border: none;
