@@ -275,7 +275,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/rock-icon.png");
+  background-image: url("./img/rock-icon.png");
   background-size: contain;
   height: 14rem;
   width: 15.1rem;
@@ -286,7 +286,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/paper-icon.png");
+  background-image: url("./img/paper-icon.png");
   background-size: contain;
   height: 13rem;
   width: 15.1rem;
@@ -298,7 +298,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/scissors-icon.png");
+  background-image: url("./img/scissors-icon.png");
   background-size: contain;
   height: 13rem;
   width: 15.1rem;
@@ -320,20 +320,20 @@ h2 {
 /*/ hover states /*/
 
 .rock:hover {
-  background-image: url('/img/sideways.png');
+  background-image: url('./img/sideways.png');
   color: #ecf0f1;
   animation: rotate 0.23s ease-out;
 }
 
 
 .paper:hover {
-  background-image: url('/img/sideways2.png');
+  background-image: url('./img/sideways2.png');
   color: #ecf0f1;
   animation: rotate 0.23s ease-out;
 }
 
 .scissors:hover {
-  background-image: url('/img/sideways3.png');
+  background-image: url('./img/sideways3.png');
   color: #ecf0f1;
   animation: rotate 0.23s ease-out;
 
